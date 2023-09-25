@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/test.dart';
+import 'package:flutter_application_1/awalgetx.dart';
 import 'dua.dart';
 
 void main() {
@@ -62,7 +62,7 @@ class Utama extends StatelessWidget {
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => const Test(),
+                        builder: (context) => const awalgetx(),
                       ),
                     );
                   },

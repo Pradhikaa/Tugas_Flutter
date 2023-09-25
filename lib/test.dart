@@ -18,7 +18,7 @@ class Test extends StatelessWidget {
                 Get.bottomSheet(Container(
                   color: Colors.white,
                   width: 100,
-                  height: 100,
+                  height: 150,
                   child: Column(
                     children: [
                       TextButton(
@@ -31,9 +31,21 @@ class Test extends StatelessWidget {
                       ),
                       TextButton(
                           onPressed: () {
-                            Get.toNamed('/listsc');
+                            Get.toNamed('/listscreen');
                           },
-                          child: const Text('List Screen'))
+                          child: const Text('List Screen')),
+                      const SizedBox(height: 10),
+                      TextButton(
+                          onPressed: () {
+                            Get.toNamed('/listmap');
+                          },
+                          child: const Text('List Map')),
+                      const SizedBox(height: 10),
+                      TextButton(
+                          onPressed: () {
+                            Get.toNamed('/awalgetx');
+                          },
+                          child: const Text('Nilai Awal Get X')),
                     ],
                   ),
                 ));
